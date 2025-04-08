@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Orçamento Web Hosttly.com</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <div class="header">
+    <ul>
+      <li><a href="index.html" class="btn-web">Orçamentos Web</a></li>
+      <li><a href="ecommerce.html" class="btn-ecommerce">Orçamentos para E-Commerce</a></li>
+    </ul>
+    <a href="https://wa.me/5583988660079" target="_blank" class="whatsapp-link">
+      <img src="zap.jpg" alt="WhatsApp" width="30">
+  </a>
+  </div>
+
+  <div class="logo-container">
+    <img src="logohosttly.png" alt="Logo do site" width="150">
+  </div>
+
+  <h1>🧾 Orçamentos Web</h1>
+  <form id="calc-form">
+
+    <h2>✅ Serviços Iniciais (essenciais)</h2>
+    <div class="section servico-inicial">
+      <label>Quantidade de páginas prontas:
+        <input type="number" id="paginasProntas" min="1" value="4">
+      </label>
+      <label><input type="checkbox" class="pacote-basico" value="300" checked> Design profissional</label>
+      <label><input type="checkbox" class="pacote-basico" value="100" checked> Formulário de contato</label>
+      <label><input type="checkbox" class="pacote-basico" value="70" checked> Botão WhatsApp básico</label>
+      <label><input type="checkbox" class="pacote-basico" value="70" checked> Integração do Google Maps</label>
+      <label><input type="checkbox" class="pacote-basico" value="100" checked> Otimização para celular</label>
+      
+    </div>
+
+    <h2>➕ Serviços Adicionais (opcionais)</h2>
+    <div class="section">
+      <label><input type="checkbox" value="100"> Página extra estática</label>
+      <label><input type="checkbox" value="100"> Integração com Instagram (feed)</label>
+      <label><input type="checkbox" value="150"> Galeria de fotos com filtros</label>
+      <label><input type="checkbox" value="180"> Integração WhatsApp Premium (formulário → WhatsApp)</label>
+      <label><input type="checkbox" value="200"> Página de portfólio (até 6 projetos)</label>
+      <label><input type="checkbox" value="150"> SEO básico</label>
+      <label><input type="checkbox" value="200"> SEO avançado (metatags e Console)</label>
+      <label><input type="checkbox" value="250"> SEO avançado (palavras-chave e conteúdo)</label>
+      <label><input type="checkbox" value="300">Calculadora de orçamento</label>
+      <label>
+        <input type="checkbox" id="scriptCheckbox" value="300" />
+        Script personalizado (ex: agendamento, consulta)
+      </label>
+      <input type="number" id="quantidadeScripts" min="1" value="1" style="display: none; width: 60px;" />
+      
+      <label><input type="checkbox" value="300">Blog com 3 posts (estrutura + conteúdo base)</label>
+      
+      
+      
+    </div>
+  </form>
+  
+
+  <div class="total">Total: R$ <span id="total">0</span></div>
+
+  <div class="actions">
+    <button id="gerarPDF">📄 Gerar PDF</button>
+    <button id="enviarWhatsApp">📲 Enviar pelo WhatsApp</button>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+  <script src="script.js"></script>
+  
+
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2025 Hosttly.com - Todos os direitos reservados</p>
+      
+    </div>
+  </footer>
+</body>
+
+</html>

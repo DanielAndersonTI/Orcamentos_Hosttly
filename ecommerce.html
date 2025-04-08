@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de E-Commerce</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="header">
+    <ul>
+      <li><a href="index.html" class="btn-web">Orçamentos Web</a></li>
+      <li><a href="ecommerce.html" class="btn-ecommerce">Orçamentos para E-Commerce</a></li>
+    </ul>
+    <a href="https://wa.me/5583988660079" target="_blank" class="whatsapp-link">
+      <img src="zap.jpg" alt="WhatsApp" width="30">
+  </a>
+  </div>
+
+  <div class="logo-container">
+    <img src="logohosttly.png" alt="Logo do site" width="150">
+  </div>
+
+  <h1>🛒 Orçamentos para E-Commerce</h1>
+  
+  <form id="ecommerce-form">
+    <h2>✅ Opções de Loja Virtual</h2>
+    <div class="section">
+      <label>
+        <input type="checkbox" id="siteLojaCompleta" value="2000">
+        Site institucional + loja virtual completa
+      </label>
+      <label>
+        <input type="checkbox" id="lojaSimplificada" value="1200">
+        Loja virtual simplificada (até 3 páginas + checkout)
+      </label>
+      <label>
+        <input type="checkbox" id="pagamentoSite" value="900">
+        Página de e-commerce com pagamento no site
+      </label>
+      <label>
+        <input type="checkbox" id="fechamentoZap" value="450">
+        Página de e-commerce com fechamento no WhatsApp
+      </label>
+      <label>
+        <input type="checkbox" id="filtroProdutos" value="200">
+        Filtro de produtos (opcional)
+      </label>
+    </div>
+
+    <h2>🍽️ Opções para Restaurantes</h2>
+    <div class="section">
+      <label>
+        <input type="checkbox" id="cardapioZap" value="600">
+        Cardápio com seleção e pedido via WhatsApp 
+      </label>
+      <label>
+        <input type="checkbox" id="cardapioPagamento" value="1200">
+        Cardápio com pedido, pagamento no site e envio automático
+      </label>
+      <label>
+        <input type="checkbox" id="filtroCardapio" value="200">
+        Filtro de pratos/categorias (opcional) 
+      </label>
+    </div>
+  </form>
+
+  <div class="total">Total: R$ <span id="ecom-total">0</span></div>
+
+  <div class="actions">
+    <button id="gerarPDF">📄 Gerar PDF</button>
+    <button id="enviarWhatsApp">📲 Enviar pelo WhatsApp</button>
+  </div>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+  <script src="ecommerce.js"></script>
+
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2025 Hosttly.com - Todos os direitos reservados</p>
+      
+    </div>
+  </footer>
+</body>
+
+</html>
